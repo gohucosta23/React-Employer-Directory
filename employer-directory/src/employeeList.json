@@ -1,0 +1,74 @@
+[
+    {
+        "firstName" : "Hugo",
+        "lastName" : "Costa",
+        "image" : "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Manager",
+        "employeeId" : 1,
+        "departmentId" : 100
+    },
+    {
+        "firstName" : "John",
+        "lastName" : "Smith",
+        "image" : "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Manager",
+        "employeeId" : 2,
+        "departmentId" : 100
+    },
+    {
+        "firstName" : "Helen",
+        "lastName" : "Schmidt",
+        "image" : "https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Developer",
+        "employeeId" : 3,
+        "departmentId" : 200
+    },
+    {
+        "firstName" : "Kevin",
+        "lastName" : "Hart",
+        "image" : "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Developer",
+        "employeeId" : 4,
+        "departmentId" : 200
+    },
+    {
+        "firstName" : "William",
+        "lastName" : "Spencer",
+        "image" : "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Developer",
+        "employeeId" : 5,
+        "departmentId" : 200
+    },
+    {
+        "firstName" : "Josh",
+        "lastName" : "Callahan",
+        "image" : "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Developer",
+        "employeeId" : 6,
+        "departmentId" : 200
+    },
+    {
+        "firstName" : "Michael",
+        "lastName" : "Smith",
+        "image" : "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Developer",
+        "employeeId" : 7,
+        "departmentId" : 200
+    },
+    {
+        "firstName" : "Leah",
+        "lastName" : "Harlem",
+        "image" : "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Intern",
+        "employeeId" : 8,
+        "departmentId" : 300
+    },
+    {
+        "firstName" : "David",
+        "lastName" : "Nikl",
+        "image" : "https://images.pexels.com/photos/1073097/pexels-photo-1073097.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "role" : "Intern",
+        "employeeId" : 9,
+        "departmentId" : 300
+    }
+]
