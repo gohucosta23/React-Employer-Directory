@@ -1,14 +1,13 @@
 import React from "react";
 
 
-function EmployeeCardContainer(props) {
+export default function EmployeeCardContainer(props) {
     return (
         <div className="col-9">
-            <div className="container">
+            <div>
                {props.children}
             </div>
         </div>
     );
 }
 
-export default EmployeeCardContainer;

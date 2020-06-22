@@ -3,7 +3,7 @@ import React from "react";
 const styles = {
     cards : {
         float : "left",
-        width : "200px"
+        width : "230px"
     }
 }
 

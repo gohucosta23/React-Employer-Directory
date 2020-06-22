@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import employeeList from "../employeeList.json";
-import EmployeeCard from "./EmployeeCard";
-import EmployeeForm from "./EmployeeForm";
-import Wrapper from "./Wrapper/index";
-import EmployeeCardContainer from "./EmployeeCardContainer";
+import EmployeeCard from "./EmployeeComponents/EmployeeCard";
+import EmployeeForm from "./FormComponents/EmployeeForm";
+import Wrapper from "./Wrapper";
+import EmployeeCardContainer from "./EmployeeComponents/EmployeeCardContainer";
+import FormContainer from "./FormComponents/FormContainer";
+// import SortFunction from './FormComponents/SortFunction';
+
 
 export default class Employee extends Component {
 
@@ -24,10 +27,9 @@ export default class Employee extends Component {
     handleFormSubmit = (event) => {
         event.preventDefault();
         
-        const employeeById = employeeList.filter(employee => {
-            
-            return employee.employeeId === parseInt(this.state.searchId)
-        });
+        const employeeById = employeeList.filter(employee => employee.employeeId === parseInt(this.state.searchId));
+        if(employeeById === "[]"){
+        }
         this.setState({
             search : employeeById
         })
@@ -45,17 +47,19 @@ export default class Employee extends Component {
 
         const option = event.target.value;
        
-        if(option === "Ascending") {
-            const sortByName = employeeList.sort((a, b) => (a.firstName.charAt(0) > b.firstName.charAt(0)) ? 1 : -1);
+        
+
+            const sortByName = employeeList.sort((a, b) => (a[option].charAt(0) > b[option].charAt(0)) ? 1 : -1);
             this.setState({
                 search : sortByName
         })
-        }else if(option === "Descending") {
-            const sortByName = employeeList.sort((a, b) => (a.firstName.charAt(0) < b.firstName.charAt(0)) ? 1 : -1);
-            this.setState({
-                search : sortByName
-        })
-        }
+
+        // else if(option === "lastName") {
+        //     const sortByName = employeeList.sort((a, b) => (a.lastName.charAt(0) > b.lastName.charAt(0)) ? 1 : -1);
+        //     this.setState({
+        //         search : sortByName
+        // })
+        // }
         
     }
 
@@ -64,23 +68,25 @@ export default class Employee extends Component {
         return (
             <div>
                 <Wrapper>
-                <EmployeeForm 
-                    handleFormSubmit = {this.handleFormSubmit}
-                    handleInputChange = {this.handleInputChange}
-                    filterByRole = {this.filterByRole}
-                    sortByName = {this.sortByName}
-                    employees = {this.state.search} />
-                <EmployeeCardContainer>
-            {this.state.search.map(employee => (
-                <EmployeeCard 
-                    image = {employee.image}
-                    firstName = {employee.firstName}
-                    lastName = {employee.lastName}
-                    role = {employee.role}
-                    employeeId = {employee.employeeId}
-                    departmentId = {employee.departmentId} />
-                ))} 
-                </EmployeeCardContainer>
+                    <FormContainer>
+                        <EmployeeForm 
+                            handleFormSubmit = {this.handleFormSubmit}
+                            handleInputChange = {this.handleInputChange}
+                            filterByRole = {this.filterByRole}
+                            sortByName = {this.sortByName}
+                            employees = {this.state.search} />
+                    </FormContainer>
+                    <EmployeeCardContainer>
+                        {this.state.search.map(employee => (
+                            <EmployeeCard 
+                                image = {employee.image}
+                                firstName = {employee.firstName}
+                                lastName = {employee.lastName}
+                                role = {employee.role}
+                                employeeId = {employee.employeeId}
+                                departmentId = {employee.departmentId} />
+                            ))} 
+                    </EmployeeCardContainer>
                 </Wrapper>             
             </div>
         )
