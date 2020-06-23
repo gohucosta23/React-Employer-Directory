@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import Employee from "./components/Employee";
+import Header from './components/StyleComponents/Header';
+import Employee from "./components/EmployeeComponents/Employee";
 import './App.css';
 
 function App() {

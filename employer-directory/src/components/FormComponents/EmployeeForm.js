@@ -1,5 +1,5 @@
 import React from 'react';
-import ListOfRoles from "../ListOfRoles";
+import ListOfRoles from "./ListOfRoles";
 
 
 export default function EmployeeForm(props) {
