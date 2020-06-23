@@ -14,6 +14,12 @@ export default class Employee extends Component {
         search : employeeList,
         searchId : ""
     }
+
+    message = () => {
+        return (
+            <h1>No Employees with that Id... </h1>
+        );
+    }
    
     handleInputChange = (event) => {
 
@@ -28,12 +34,14 @@ export default class Employee extends Component {
         event.preventDefault();
         
         const employeeById = employeeList.filter(employee => employee.employeeId === parseInt(this.state.searchId));
-        if(employeeById === "[]"){
-        }
-        this.setState({
-            search : employeeById,
-            searchId : ""
-        })
+        console.log(employeeById)
+        
+            this.setState({
+                search : employeeById,
+                searchId : " "
+            })
+        
+        
     }
     filterByRole = event => {
 
@@ -66,9 +74,13 @@ export default class Employee extends Component {
                             filterByRole = {this.filterByRole}
                             sortByName = {this.sortByName}/>
                     </FormContainer>
-                    <EmployeeCardContainer>
+                    {this.state.search.length === 0 ? 
+                    <div className = "mx-auto" style = {{border : "3px groove white", padding : "170px"}}>
+                        <h1><strong>NO EMPLOYEES WITH THAT ID...</strong> </h1></div> : 
+                        <EmployeeCardContainer>
                         {this.state.search.map(employee => (
                             <EmployeeCard 
+                                key = {employee.employeeId}
                                 image = {employee.image}
                                 firstName = {employee.firstName}
                                 lastName = {employee.lastName}
@@ -76,7 +88,9 @@ export default class Employee extends Component {
                                 employeeId = {employee.employeeId}
                                 departmentId = {employee.departmentId} />
                             ))} 
-                    </EmployeeCardContainer>
+                        </EmployeeCardContainer>
+                    }
+                    
                 </Wrapper>             
             </div>
         )
