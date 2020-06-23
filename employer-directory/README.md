@@ -1,68 +1,31 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub followers](https://img.shields.io/github/followers/gohucosta23.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/gohucosta23?tab=followers)
+[![GitHub forks](https://img.shields.io/github/forks/gohucosta23/README-generator?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/gohucosta23)
 
-## Available Scripts
 
-In the project directory, you can run:
+# EMPLOYEE-TRACKER
+<br>
 
-### `npm start`
+## Description
+<br>
+<p>This is a simple application that allows Users to track the employees from a given comapany. Users will be able to see all employees, filter employees by Employee Id and by Role, Sort Employees by First Name and Last Name. Currently the application is using Data from a JSON file. So, in order to add a new Employee a new object needs to be added to the EmployeeList.json file, and will be automatically added to the list of employees displayed on the browser. Also, as we add new roles, they will also be added to the filter option automatically. The employees are being displayed by using Bootstrap Cards, as well as some of the CSS style on the pages. The whole application was built using React.</p>
+<br>
+<hr>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Installation Demo](src/images/edir1.gif)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br>
+<hr>
 
-### `npm test`
+## Installation
+<br>
+<p>The application can be forked or cloned from GITHUB. The app is launched in Heroku and can be opened by clicking <a href = "https://stormy-taiga-53566.herokuapp.com/"> here</a>. </p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<hr>
 
-### `npm run build`
+<img src = "src/images/pic1.png" alt = "screen shot" width ="500px" height = "400px">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Questions
+<br>
+<p>Check out the app <a href = "https://stormy-taiga-53566.herokuapp.com/" target = "blank">here...</a><br>
+<a href = "mailto:gohucosta23@hotmail.com">gohucosta23@hotmail.com</a> 
