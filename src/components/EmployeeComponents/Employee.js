@@ -13,13 +13,7 @@ export default class Employee extends Component {
     state = {
         search : employeeList,
         searchId : ""
-    }
-
-    message = () => {
-        return (
-            <h1>No Employees with that Id... </h1>
-        );
-    }
+    } 
    
     handleInputChange = (event) => {
 
