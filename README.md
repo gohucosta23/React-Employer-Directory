@@ -18,7 +18,7 @@
 
 ## Installation
 <br>
-<p>The application can be forked or cloned from GITHUB. The app is launched in Heroku and can be opened by clicking <a href = "https://stormy-taiga-53566.herokuapp.com/"> here</a>. </p>
+<p>The application can be forked or cloned from GITHUB. The app is launched in Heroku and can be opened by clicking <a href = "https://employertracker.herokuapp.com/"> here</a>. </p>
 
 <br>
 <hr>
@@ -27,5 +27,5 @@
 
 ## Questions
 <br>
-<p>Check out the app <a href = "https://stormy-taiga-53566.herokuapp.com/" target = "blank">here...</a><br>
+<p>Check out the app <a href = "https://employertracker.herokuapp.com/" target = "blank">here...</a><br>
 <a href = "mailto:gohucosta23@hotmail.com">gohucosta23@hotmail.com</a> 
